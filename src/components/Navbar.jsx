@@ -19,7 +19,7 @@ const Navbar = () => {
       <div className="cursor-pointer md:hidden" onClick={handlenav}>
         {isNav ? <AiOutlineMenu size={25} /> : <AiOutlineClose size={25} />}
       </div>
-      <div className={`fixed top-0 pt-10 w-[60%] border-r border-r-gray-800 bg-[#000300] h-full ease-in-out duration-500 ${isNav ? "-left-[100%]" : "left-0"}`}>
+      <div className={`md:hidden fixed top-0 pt-10 w-[60%] border-r border-r-gray-800 bg-[#000300] h-full ease-in-out duration-500 ${isNav ? "-left-[100%]" : "left-0"}`}>
         <h1 className="uppercase text-3xl text-[#00df9a] font-bold px-4">React.</h1>
         <ul className="uppercase p-4">
           <li className="p-4 border-b border-gray-700">Home</li>
