@@ -1,4 +1,5 @@
 import "./App.css";
+import Analytics from "./components/Analytics";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 
@@ -7,8 +8,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Navbar />
-        <Hero />
       </header>
+      <Hero />
+      <Analytics />
     </div>
   );
 }
