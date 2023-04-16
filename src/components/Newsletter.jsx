@@ -9,10 +9,16 @@ const Newsletter = () => {
           <p>sign up to our newsletter and stay up to date</p>
         </div>
         <div className="my-4">
-          <div className="flex flex-col sm:flex-row">
-            <input className="p-3 w-full text-black" type="email" placeholder="Enter Email" />
-            <button className="w-[200px] bg-[#00df90] font-medium rounded-md text-xl md:text-2xl ml-0 sm:ml-4 px-6 py-3 sm:py-0">Notify Me</button>
+          <div className="flex flex-col md:flex-row justify-center items-center">
+            <input className="p-3 w-full text-black rounded-md" type="email" placeholder="Enter Email" />
+            <button className="w-[200px] bg-[#00df90] rounded-md font-medium text-xl sm:text-md lg:text-2xl md:ml-3 my-6 px-6 py-3 lg:px-0">Notify Me</button>
           </div>
+          <p>
+            We care about the protection of your data. Read our{" "}
+            <a className="text-[#00df90]" href="/privacy&policy">
+              Privacy & Policy
+            </a>
+          </p>
         </div>
       </div>
     </div>
