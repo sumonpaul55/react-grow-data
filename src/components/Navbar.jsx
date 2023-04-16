@@ -7,14 +7,24 @@ const Navbar = () => {
     setisNav(!isNav);
   };
   return (
-    <section className="text-white flex justify-between items-center container mx-auto">
+    <header className="text-white flex justify-between items-center container mx-auto">
       <h1 className="uppercase text-3xl text-[#00df9a] font-bold">React.</h1>
       <ul className="hidden md:flex">
-        <li className="p-4">Home</li>
-        <li className="p-4">Company</li>
-        <li className="p-4">Resources</li>
-        <li className="p-4">About</li>
-        <li className="p-4">Contact</li>
+        <li className="p-4">
+          <a href="/">Home</a>
+        </li>
+        <li className="p-4">
+          <a href="/">Company</a>
+        </li>
+        <li className="p-4">
+          <a href="/">Resources</a>
+        </li>
+        <li className="p-4">
+          <a href="/">About</a>
+        </li>
+        <li className="p-4">
+          <a href="/">Contact</a>
+        </li>
       </ul>
       <div className="cursor-pointer md:hidden" onClick={handlenav}>
         {isNav ? <AiOutlineMenu size={25} /> : <AiOutlineClose size={25} />}
@@ -22,14 +32,22 @@ const Navbar = () => {
       <div className={`md:hidden fixed top-0 pt-10 w-[60%] border-r border-r-gray-800 bg-[#000300] h-full ease-in-out duration-500 ${isNav ? "-left-[100%]" : "left-0"}`}>
         <h1 className="uppercase text-3xl text-[#00df9a] font-bold px-4">React.</h1>
         <ul className="uppercase p-4">
-          <li className="p-4 border-b border-gray-700">Home</li>
-          <li className="p-4 border-b border-gray-700">Company</li>
-          <li className="p-4 border-b border-gray-700">Resources</li>
-          <li className="p-4 border-b border-gray-700">About</li>
+          <li className="p-4 border-b border-gray-700">
+            <a href="/">Home</a>
+          </li>
+          <li className="p-4 border-b border-gray-700">
+            <a href="/">Company</a>
+          </li>
+          <li className="p-4 border-b border-gray-700">
+            <a href="/">Resources</a>
+          </li>
+          <li className="p-4 border-b border-gray-700">
+            <a href="/">About</a>
+          </li>
           <li className="p-4">Contact</li>
         </ul>
       </div>
-    </section>
+    </header>
   );
 };
 
