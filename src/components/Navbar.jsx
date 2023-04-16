@@ -7,7 +7,7 @@ const Navbar = () => {
     setisNav(!isNav);
   };
   return (
-    <div className="text-white flex justify-between items-center container mx-auto">
+    <section className="text-white flex justify-between items-center container mx-auto">
       <h1 className="uppercase text-3xl text-[#00df9a] font-bold">React.</h1>
       <ul className="hidden md:flex">
         <li className="p-4">Home</li>
@@ -29,7 +29,7 @@ const Navbar = () => {
           <li className="p-4">Contact</li>
         </ul>
       </div>
-    </div>
+    </section>
   );
 };
 
